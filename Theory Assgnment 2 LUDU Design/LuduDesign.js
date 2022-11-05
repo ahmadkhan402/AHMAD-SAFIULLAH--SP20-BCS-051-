@@ -30,8 +30,16 @@ export default function LuduDesign(){
                             </View>
                         </View>
                     </View>
+                    
                 </View>
+                
             </View>  
+            <View style={styles.wrapper}>
+            <View style={styles.row}>
+                    <View style= {styles.whitespace}>
+                    </View>
+                    </View>
+                    </View>
             <View style={styles.wrapper}>
                 <View style={styles.Row}>
                     <View style={styles.Box3}>
@@ -140,6 +148,17 @@ const styles=StyleSheet.create({
 row:{
     justifyContent:'center',
     flexDirection:'row'
+},
+whitespace:{
+    flexDirection:'row',
+    justifyContent:'center',
+    color:'white',
+    height:20,
+    width:20,
+    borderRadius:1,
+
+
+
 }
 }
 
