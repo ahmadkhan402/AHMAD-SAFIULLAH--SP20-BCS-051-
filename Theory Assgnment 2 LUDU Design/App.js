@@ -1,16 +1,13 @@
-import { useState } from 'react';
-import React from 'react';
-import { StyleSheet, Button, Alert, Text, View, TouchableOpacity, Image, SafeAreaView } from 'react-native';
-// import MyPractice from './Component/MyPractice';
 
-import DesignAsgnment from './Component/DesignAsgnment';
-import LuduDesign from './Component/LuduDesign';
-import { FlatList } from 'react-native-web';
+import React from 'react';
+import { StyleSheet, Button, Alert, Text, View, TouchableOpacity, Image, SafeAreaView, FlatList } from 'react-native';
+
+import Ludo from 'c:/users/hp/desktop/reactnative/myproject/component/ludo';
 export default function App() {
 
    return (
+    <FlatList></FlatList>
     
-    <LuduDesign></LuduDesign>
     
   );
 }
