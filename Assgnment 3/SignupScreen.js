@@ -24,7 +24,7 @@ export default function SignupScreen({navigation}) {
             <Text style={styles.txtHeader}>Sign Up</Text>
 
             </View>
-                
+                <View style={styles.conContainer}>
                 <View style={styles.inputView}>
                     <TextInput
                         style={styles.TextInput}
@@ -36,7 +36,7 @@ export default function SignupScreen({navigation}) {
                 <View style={styles.inputView}>
                     <TextInput
                         style={styles.TextInput}
-                        placeholder="Email."
+                        placeholder="Email"
                         placeholderTextColor="#003f5c"
                         onChangeText={(email) => setEmail(email)}
                     />
@@ -45,11 +45,12 @@ export default function SignupScreen({navigation}) {
                 <View style={styles.inputView}>
                     <TextInput
                         style={styles.TextInput}
-                        placeholder="Password."
+                        placeholder="Password"
                         placeholderTextColor="#003f5c"
                         secureTextEntry={true}
                         onChangeText={(password) => setPassword(password)}
                     />
+                </View>
                 </View>
 
                     <TouchableOpacity style={styles.SignupBtn} onPress={() =>{StoreRegister()}}>
@@ -71,7 +72,18 @@ export default function SignupScreen({navigation}) {
           
             alignItems:"center",
             justifyContent:"center",
+            
+            
 
+        },
+        conContainer:{
+            
+            alignSelf:"center",
+           width:"80%",
+           alignItems:"center",
+           borderRadius:20,
+            backgroundColor: "lightblue",
+            paddingTop:20,
         },
 
         txtHeader:{
@@ -83,13 +95,9 @@ export default function SignupScreen({navigation}) {
             justifyContent:"center",
             alignItems:"center",
             borderRadius: 10,
-            height: 50,
             width:"55%",
-            marginTop: 20,
-            marginLeft:30,
-            paddingLeft:30,
-            paddingBottom:2,
             backgroundColor: "#FF1493",
+            textAlign:"center"
 
         },
             
@@ -118,8 +126,7 @@ export default function SignupScreen({navigation}) {
                 flexDirection:"row",
             justifyContent:"space-between",
             alignItems:"center",
-            width:"30%",
-            marginRight:100
+            
         },
             SignupBtn:{
                 width: "80%",
@@ -128,7 +135,7 @@ export default function SignupScreen({navigation}) {
             alignItems: "center",
             justifyContent: "center",
             marginTop: 20,
-            marginLeft:30,
+            
             backgroundColor: "#FF1493",
         }
 })
